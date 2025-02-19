@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rago TV</title>
+    <style>
+        /* Resetando margens e padding para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://via.placeholder.com/1500x900');
+            /* Substitua pelo link da sua imagem */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: rgba(255, 0, 0, 0.8);
+            /* Vermelho com transparência */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        /* Menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: rgba(255, 0, 0, 0.9);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <link rel="manifest" href="manifest.json">
+    <script>if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+                console.log('Service Worker registrado com sucesso:', registration);
+            }).catch(function (error) {
+                console.log('Falha ao registrar o Service Worker:', error);
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Rago TV</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Planos</a>
+        <a href="#">Indicações</a>
+        <a href="#">Login</a>
+    </nav>
+
+    <main>
+        <h2>Bem-vindo à Rago TV</h2>
+        <p>Assista seus programas e filmes favoritos com a melhor qualidade!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rago TV. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
